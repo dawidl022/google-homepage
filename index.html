@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://kit.fontawesome.com/8c8bdca6ab.js" crossorigin="anonymous"></script>
+    <title>Google</title>
+    <style>
+      html, body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    height: 100%;
+      }
+      main {
+        height: 100%;
+        width: 100%;
+        /* background-color: black; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      form {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      #top-nav {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      a {
+        padding: 10px;
+        color:  rgba(0,0,0,0.72);
+        text-decoration: none;
+      } 
+
+      .fas {
+        font-size: 20px;
+      }
+
+      header {
+        margin: 10px;
+	      font-family: arial,sans-serif;
+        font-size: 14px;;
+      }
+
+      footer {
+        margin: 0;
+      }
+
+      #bottom-nav {
+        background-color: #f2f2f2;
+        border-top: 1px solid rgba(0,0,0,0.08);
+
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+      }
+
+      #links1 {
+        order: 1;
+      }  
+      
+      #links2 {
+        order: 0;
+      }
+
+      #links1, #links2 {
+        padding: 5px 10px 2px 10px;
+      }
+
+      #dots9 {
+        padding: 5px 15px 10px 10px;
+      }
+
+      #login-button {
+        margin-left: 5px;
+        padding: 8px 15px 8px 15px;
+        color: white;
+        font-weight: 600;
+        background-color:#4583ed;
+        border-radius: 2px;
+        height: 15px;
+      }
+
+      #search-buttons-area {
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+      }
+
+      #searchbox {
+        border-radius: 30px;
+        height: 42px;
+        width: 500px;
+        padding-left: 20px;
+        border-style: solid;
+        border-width: 1px;
+        margin: 10px;
+      }
+
+      #searchbox:focus, #searchbox:hover {
+        border-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 5px rgb(158, 158, 158);
+      }
+
+      .search-button {
+        background-color: #f8f9fa;
+        border-radius: 4px;
+        height: 40px;
+        border-style: none;
+        margin: 0px 5px 0px 5px;
+      }
+
+      .gray-text {
+        color: #6b6b6b;
+      }
+      
+      @media (max-width: 800px) {
+        #bottom-nav {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        #links1, #links2 {
+          padding: 5px 0px 2px 0px;
+        }
+        #links1 {
+        order: 0;
+        padding-bottom: 20px;
+        }  
+      
+        #links2 {
+        order: 1;
+        }
+      }
+
+      @media (min-height: 700px) {
+        main {
+          padding-bottom: 30%;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        main {
+          padding-bottom: 20%;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav id="top-nav">
+        <a href="https://mail.google.com">Gmail</a>
+        <a href="https://www.google.com/imghp">Images</a>
+        <a id="dots9" href="https://about.google/intl/ALL_pl/products/"><i class="fas fa-th"></i></a>
+        <a id="login-button" href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAAQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="button">Sign in</a>
+      </nav>
+    </header>
+    <main>
+      <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+      <section id="search">
+        <form target="">
+          <input type="text" id="searchbox">
+          <div id="search-buttons-area">
+            <button class="search-button">Google Search</button>
+            <button class="search-button">I'm Feeling Lucky</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <nav id="bottom-nav">
+        <div id="links1">
+          <a class="gray-text" href="https://policies.google.com/privacy">Privacy</a>
+          <a class="gray-text" href="https://policies.google.com/terms">Terms</a>
+          <a class="gray-text" href="#">Settings</a>
+        </div>
+        <div id="links2">
+          <a class="gray-text" href="https://ads.google.com/">Advertising</a>
+          <a class="gray-text" href="https://www.google.com/services/">Business</a>
+          <a class="gray-text" href="https://about.google/">About</a>
+          <a class="gray-text" href="https://www.google.com/search/howsearchworks/">How search works</a>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>
