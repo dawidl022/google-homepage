@@ -1,4 +1,4 @@
-This is a mini intrudoctory to HTML and CSS project for The Odin Project fundamentals course.
+## This is a mini intrudoctory to HTML and CSS project for The Odin Project fundamentals course.
 
 I have tried to recreate the google homepage using git version control while building the project.
 
