@@ -142,8 +142,7 @@ footer nav a {
 }
 
 
-/* TODO change back to 578px */
-@media (min-width: 400px) {
+@media (min-width: 576px) {
   #google-logo {
     width: 272px;
     height: 92px;
@@ -158,8 +157,7 @@ footer nav a {
   }
 }
 
-/* TODO change back to 1024px */
-@media (min-width: 600px) {
+@media (min-width: 1024px) {
   .nav-mobile {
     display: none !important;
   }
