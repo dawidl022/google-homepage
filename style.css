@@ -1,0 +1,271 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+
+header {
+  color: #5f6368;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+header nav {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.75em;
+}
+
+header nav > * {
+  padding: 8px;
+  padding-bottom: 15px;
+  margin: 5px;
+  margin-bottom: 0;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit
+}
+
+header nav, #services {
+  display: flex;
+  align-items: center;
+}
+
+.current-page {
+  color: #4285f4;
+  border-bottom: 2px solid #4285f4;
+}
+
+.app-icon {
+  padding: 8px;
+  color: #5f6368;
+}
+
+.app-icon:hover {
+  cursor: pointer;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+
+#sign-in {
+  margin: 0 10px;
+  margin-left: 12px;
+  background-color: #1a73e8;
+  color: white;
+  padding: 9px 18px;
+  font-size: 0.9em;
+  border-radius: 5px;
+}
+
+#sign-in:hover {
+  background-color: #2B7DE9;
+  box-shadow: 0 0 5px 0.5px #D5E4FC;
+}
+
+.nav-desktop, .service-desktop {
+  display: none;
+}
+
+main {
+  margin-top: 60px;
+  text-align: center;
+  flex: 1;
+}
+
+#google-logo {
+  width: 160px;
+  height: 54px;
+}
+
+#search-box {
+  display: flex;
+  padding: 7px;
+  border: 1px solid #dadce0;
+  border-radius: 20px;
+  margin: 24px 8px;
+}
+
+#search-box span {
+  color: #9aa0a6;
+}
+
+
+input[type="text"] {
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  margin-left: 10px;
+  font-family: inherit;
+}
+
+footer {
+  /* height: 130px; */
+  background-color: #f2f2f2;
+  color: #6f6f6f;
+}
+
+footer #country {
+  padding: 10px 12px;
+}
+
+footer nav {
+  border-top: 1px solid #dadce0;
+  font-size: 0.8em;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer nav .nav-row-mobile {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+}
+
+footer nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.desktop {
+  display: none;
+}
+
+
+/* TODO change back to 578px */
+@media (min-width: 400px) {
+  #google-logo {
+    width: 272px;
+    height: 92px;
+  }
+
+  main {
+    margin-top: 105px;
+  }
+
+  #search-box {
+    margin: 28px 16px;
+  }
+}
+
+/* TODO change back to 1024px */
+@media (min-width: 600px) {
+  .nav-mobile {
+    display: none !important;
+  }
+  .nav-desktop {
+    display: initial;
+    font-size: 0.9rem;
+    font-weight: initial;
+    text-transform: none;
+  }
+
+  header {
+    color: #222;
+    margin: 7px 8px;
+  }
+
+  header nav {
+    margin-left: 5px;
+  }
+
+  main {
+    margin-top: 5px;
+  }
+
+  main form {
+    display: flex;
+    justify-content: center;
+  }
+
+  #search-box {
+    margin-top: 22px;
+    padding: 12px;
+    border-radius: 25px;
+    width: 564px;
+  }
+
+  #search-box span {
+    color: #9aa0a6;
+    font-size: 20px;
+    margin-left: 5px;
+  }
+
+  #sign-in {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+
+  #search-box:hover, #search-box:focus {
+    cursor: text;
+    border-color: white; 
+    box-shadow: 0 1px 5px 1px lightgrey;
+  }
+
+  .service-desktop {
+    display: inline;
+    font-size: 0.8em;
+    padding: 8px;
+  }
+  .app-icon {
+    margin-left: 12px;
+  }
+
+  .nav-desktop:hover, .service-desktop:hover {
+    text-decoration: underline;
+  }
+
+  footer {
+    height: auto;
+  }
+
+  footer nav {
+    padding: 15px 34px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    font-size: 0.9em;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: inline;
+  }
+
+  .search-button {
+    all: unset;
+    display: inline-block;
+    cursor: pointer;
+    padding: 9px 16px;
+    margin: 3px;
+    margin-top: 0;
+    background-color: #f8f9fa;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-size: 0.88em;
+    color: #3c4043;
+  }
+
+  .search-button:hover {
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px 0.2px lightgrey;
+  }
+
+  main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

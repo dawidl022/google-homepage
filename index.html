@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Google</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="description" content="Dummy google homepage made to imitate the
+      real google homepage in terms of style and layout. Part of The Odin
+      Project fundamentals course.">
+    <meta name="keywords" content="google, search, homepage, dummy, learn, html,
+      css, the odin project">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round|Material+Icons+Outlined"
+      rel="stylesheet">
+    <script src="main.js"></script> <!-- short js to fix hover on label -->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- mobile content -->
+        <span class="material-icons nav-mobile">
+          menu
+        </span>
+        <span class="nav-mobile current-page">All</span>
+        <a href="https://images.google.com" class="nav-mobile">Images</a>
+        <!-- desktop content -->
+        <a href="https://about.google.com" class="nav-desktop">About</a>
+        <a href="https://store.google.com" class="nav-desktop">Store</a>
+      </nav>
+      <div id="services">
+        <!-- desktop content start -->
+        <a href="https://mail.google.com" class="service-desktop">Gmail</a>
+        <a href="https://images.google.com" class="service-desktop">Images</a>
+        <!-- desktop content end -->
+        <span class="material-icons-round app-icon">
+          apps
+        </span>
+        <a href="accounts.google.com" id="sign-in">Sign in</a>
+      </div>
+    </header>
+    <main>
+      <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        alt="google-logo" id="google-logo">
+      <form action="">
+        <label for="search" id="search-box">
+          <span class="material-icons-outlined">
+            search
+          </span>
+          <input type="text" id="search">
+        </label>
+        <div class="buttons">
+          <input type="submit" value="Google Search" class="search-button desktop">
+          <input type="submit" value="I'm Feeling Lucky" class="search-button desktop">
+        </div>
+      </form>
+    </main>
+    <footer>
+      <!-- <div id="country">
+        United Kingdom
+      </div> -->
+      <nav>
+        <div class="nav-row-mobile">
+          <a href="https://google.com/preferences">Settings</a>
+          <a href="https://google.com/privacy">Privacy</a>
+          <a href="https://policies.google.com">Terms</a>
+        </div>
+        <div class="nav-row-mobile">
+          <a href="https://google.com/advertising">Advertising</a>
+          <a href="https://google.com/business">Business</a>
+          <a href="https://about.google.com" class="mobile">About</a>
+          <a href="https://about.google.com" class="desktop">
+            How Search works</a>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>
