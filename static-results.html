@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Google</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="description" content="Dummy google homepage made to imitate the
+      real google homepage in terms of style and layout. Part of The Odin
+      Project fundamentals course.">
+    <meta name="keywords" content="google, search, homepage, dummy, learn, html,
+      css, the odin project">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round|Material+Icons+Outlined"
+    rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/results.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <span class="material-icons nav-mobile">
+          menu
+        </span>
+        <img src="images/google-logo.png"
+        alt="google-logo" id="google-logo">
+        <span class="material-icons-outlined account-icon">
+          account_circle
+        </span>
+      </div>
+      <form action="https://google.com/search">
+        <label for="search" id="search-box">
+          <span class="material-icons-outlined">
+            search
+          </span>
+          <input type="text" id="search" name="q" value="build this webpage">
+          <span class="material-icons-outlined clear-search">
+            close
+          </span>
+        </label>
+      </form>
+      <nav class="main-nav">
+        <span class="current-page">All</span>
+        <a href="#">News</a>
+        <a href="#">Videos</a>
+        <a href="#">Maps</a>
+        <a href="#">Images</a>
+        <a href="#">Shopping</a>
+        <a href="#">Books</a>
+        <a href="#">Flights</a>
+        <a href="#" class="special-nav">Search&nbsp;tools</a>
+      </nav>
+    </header>
+  </body>
+</html>

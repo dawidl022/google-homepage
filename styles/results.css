@@ -1,0 +1,68 @@
+
+.header-top {
+  padding: 1.1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: .9em;
+}
+
+#google-logo {
+  width: 92px;
+}
+
+.account-icon {
+  font-size: 2rem;
+  color: #1a73e8;
+}
+
+#search-box {
+  margin: 0 1.1em;
+  border-color: white; 
+  box-shadow: 0 2px 4px 1px rgb(233, 233, 233);
+  padding: 9px;
+  border-radius: 100px;
+}
+
+.clear-search:hover {
+  cursor: pointer ;
+}
+
+.main-nav {
+  margin-top: .2em;
+  display: flex;
+  overflow-x: auto;
+}
+
+.main-nav > * {
+  font-size: .9rem;
+  display: block;
+  padding: 1em .8em;
+  padding-bottom: .8rem;
+}
+
+.main-nav a {
+  color: unset;
+  text-decoration: none;
+}
+
+.current-page {
+  margin: 1em 1em .6em 1.1rem;
+  padding: 0 0 .2em 0;
+  color: #202124;
+  border-bottom: 2px solid currentColor;
+}
+
+.special-nav {
+  border-left: 1px solid #e0e0e0;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+main {
+  background-color: #f1f3f4;
+}
+
+main > * {
+  background-color: #fff;
+}
