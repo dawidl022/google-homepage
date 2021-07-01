@@ -1,19 +1,13 @@
 body {
-  margin: 0;
-  padding: 0;
   height: 100vh;
-  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
 }
 
-
 header {
-  color: #5f6368;
   display: flex;
   justify-content: space-between;
 }
-
 
 header nav {
   text-transform: uppercase;
@@ -82,33 +76,6 @@ main {
 #google-logo {
   width: 160px;
   height: 54px;
-}
-
-#search-box {
-  display: flex;
-  padding: 7px;
-  border: 1px solid #dadce0;
-  border-radius: 20px;
-  margin: 24px 8px;
-}
-
-#search-box span {
-  color: #9aa0a6;
-}
-
-
-input[type="text"] {
-  border: 0;
-  outline: 0;
-  font-size: 16px;
-  margin-left: 10px;
-  font-family: inherit;
-}
-
-footer {
-  /* height: 130px; */
-  background-color: #f2f2f2;
-  color: #6f6f6f;
 }
 
 footer #country {
