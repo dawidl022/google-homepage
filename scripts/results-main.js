@@ -33,3 +33,12 @@ resultDescriptions.forEach(function(descr) {
     }
   descr.innerHTML = descriptionWords.join(" ");
 }) 
+
+const relatedToggles = document.querySelectorAll(".related-toggle");
+relatedToggles.forEach(function(toggle) {
+  toggle.addEventListener("click", function(e) {
+    const content = e.target.parentNode.parentNode.querySelector(".related");
+    content.classList.toggle("hidden")
+    toggle.classList.toggle("off")
+  })
+})
