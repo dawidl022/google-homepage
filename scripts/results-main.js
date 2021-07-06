@@ -34,11 +34,15 @@ resultDescriptions.forEach(function(descr) {
   descr.innerHTML = descriptionWords.join(" ");
 }) 
 
-const relatedToggles = document.querySelectorAll(".related-toggle");
+const relatedToggles = document.querySelectorAll(".related-search");
+
 relatedToggles.forEach(function(toggle) {
   toggle.addEventListener("click", function(e) {
-    const content = e.target.parentNode.parentNode.querySelector(".related");
-    content.classList.toggle("hidden")
-    toggle.classList.toggle("off")
+
+    const content = this.parentNode.querySelector(".related-container");
+    content.classList.toggle("hidden");
+
+    const arrow = this.querySelector(".related-toggle");
+    arrow.classList.toggle("off")
   })
 })
