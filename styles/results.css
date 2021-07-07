@@ -67,11 +67,14 @@ a {
 }
 
 main {
-  background-color: #f1f3f4;
   padding: .4rem 0;
   color: #3c4043;
   display: grid;
   gap: .4em;
+}
+
+main, footer {
+  background-color: #f1f3f4;
 }
 
 main > * {
@@ -146,7 +149,7 @@ main p {
 
 .related {
   display: flex;
-  overflow-x: scroll;
+  overflow-x: auto;
   padding: .2em 0 1em 0;
   gap: .4em;
 }
@@ -154,6 +157,7 @@ main p {
 .related article {
   border: 1px solid #d0d0d0;
   border-radius: 10px;
+  width: 96px;
 }
 
 .related-searches h2{
@@ -246,6 +250,22 @@ main p {
   gap: .4em;
 }
 
+.related-bubble {
+  color: #202124;
+}
+
+footer .related-bubble {
+  display: grid;
+  grid-template-columns: 1rem 1fr 1rem;
+  justify-items: center;
+  background-color: #fff;
+  width: 100%;
+  margin: 1rem;
+  font-size: .9rem;
+  padding-top: .7em;
+  padding-bottom: .7em;
+}
+
 .related-bubble h3 {
   color: #3c4043;
 }
@@ -255,6 +275,7 @@ main p {
   display: flex;
   align-items: center;
   padding: .8rem;
+  padding-right: 0;
   border-top: solid 1px #dadce0;
   gap: 1.2rem;
 }
@@ -264,8 +285,21 @@ main p {
   color: #757575;
 }
 
+footer .related-bubble .icon {
+  font-size: 1.5rem;
+  color: rgb(112, 117, 122);
+}
+
 .related-link:nth-last-child(2) {
   border-bottom: solid 1px #dadce0;
+}
+
+.bottom .related-link:nth-last-child(2) {
+  border-bottom: none;
+}
+
+.related-searches.bottom h2 {
+  padding-bottom: 2rem;
 }
 
 .related a {
@@ -290,6 +324,22 @@ main p {
   max-height: 0;
   padding: 0;
 }
+
+.bottom {
+  order: 10;
+}
+
+footer nav {
+  font-size: .9rem;
+}
+
+.nav-row-mobile {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-bottom: 1rem;
+}
+
 
 @media (min-width: 1024px) {
   .desktop {
