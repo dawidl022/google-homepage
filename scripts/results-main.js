@@ -46,3 +46,8 @@ relatedToggles.forEach(function(toggle) {
     arrow.classList.toggle("off")
   })
 })
+
+const clearButton = document.querySelector(".clear-search");
+clearButton.addEventListener("click", function(e) {
+  e.target.parentNode.querySelector("input").value = "";
+})
