@@ -112,7 +112,8 @@ footer nav .nav-row-mobile {
   }
 
   main {
-    margin-top: 105px;
+    margin-top: 60px;
+    margin-bottom: 40px;
   }
 
   #search-box {
@@ -167,7 +168,7 @@ footer nav .nav-row-mobile {
     padding-right: 26px;
   }
 
-  #search-box:hover, #search-box:focus {
+  #search-box:hover, #search-box.focused {
     cursor: text;
     border-color: white; 
     box-shadow: 0 1px 5px 1px lightgrey;
@@ -232,5 +233,13 @@ footer nav .nav-row-mobile {
 
   .desktop-last {
     order: 1;
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 650px) {
+  main {
+    display: grid;
+    margin-bottom: 310px;
+    align-content: end;
   }
 }

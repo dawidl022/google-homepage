@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round|Material+Icons+Outlined"
       rel="stylesheet">
     <link rel="icon" href="images/google-icon-bg.png">
+    <script src="scripts/main.js" defer></script>
   </head>
   <body>
     <header>
@@ -43,20 +44,22 @@
       </div>
     </header>
     <main>
-      <img src="images/google-logo.png"
-        alt="google-logo" id="google-logo">
-      <form action="https://google.com/search">
-        <label for="search" id="search-box">
-          <span class="material-icons-outlined">
-            search
-          </span>
-          <input type="text" id="search" name="q">
-        </label>
-        <div class="buttons">
-          <input type="submit" value="Google Search" class="search-button desktop">
-          <a href="static-results.html" class="search-button desktop">I'm Feeling Lucky</a>
-        </div>
-      </form>
+      <div class="wrapper">
+        <img src="images/google-logo.png"
+          alt="google-logo" id="google-logo">
+        <form action="https://google.com/search">
+          <label for="search" id="search-box">
+            <span class="material-icons-outlined">
+              search
+            </span>
+            <input type="text" id="search" name="q">
+          </label>
+          <div class="buttons">
+            <input type="submit" value="Google Search" class="search-button desktop">
+            <a href="static-results.html" class="search-button desktop">I'm Feeling Lucky</a>
+          </div>
+        </form>
+      </div>
     </main>
     <footer>
       <!-- <div id="country">

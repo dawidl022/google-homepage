@@ -10,5 +10,5 @@ What I learnt:
 - How to rename branch in git: `git branch -m <old-name> <new-name>`
 
 What I had difficulties with:
-- Applying a style to the parent if the child had focus (searchbar). (still a
-  TODO, presumably with JavaScript)
+- Applying a style to the parent if the child had focus (searchbar). (I managed
+  to do this with JavaScript)
