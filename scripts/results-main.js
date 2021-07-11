@@ -43,7 +43,7 @@ relatedToggles.forEach(function(toggle) {
     content.classList.toggle("hidden");
 
     const arrow = this.querySelector(".related-toggle");
-    arrow.classList.toggle("off")
+    arrow.classList.toggle("off");
   })
 })
 
@@ -55,14 +55,23 @@ clearButton.addEventListener("click", function(e) {
 // TODO change header class on sticky
 // https://developers.google.com/web/updates/2017/09/sticky-headers
 
-const moreNavs = document.querySelectorAll(".more")
-const moreList = document.querySelector(".more-navs")
+const moreWrapper = document.querySelector(".more-wrapper");
+const moreNavs = document.querySelectorAll(".more");
+const moreList = document.querySelector(".more-navs");
 
 moreNavs.forEach(function(nav) {
-  moreList.appendChild(nav)
+  moreList.appendChild(nav);
 })
 
 const moreToggle = document.getElementById("more-toggle")
 moreToggle.addEventListener("click", function() {
-  moreList.classList.toggle("shown")
+  moreList.classList.toggle("shown");
+  moreWrapper.classList.toggle("on-top");
+})
+
+document.addEventListener("click", function(e) {
+  if (!(moreWrapper.contains(e.target))) {
+    moreList.classList.remove("shown");
+    moreWrapper.classList.remove("on-top")
+  }
 })
