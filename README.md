@@ -12,3 +12,4 @@ What I learnt:
 What I had difficulties with:
 - Applying a style to the parent if the child had focus (searchbar). (I managed
   to do this with JavaScript)
+- Getting a sub-menu to pop up (more nav on results page)

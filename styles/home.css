@@ -38,29 +38,7 @@ header nav, #services {
 }
 
 .app-icon {
-  padding: 8px;
   color: #5f6368;
-}
-
-.app-icon:hover {
-  cursor: pointer;
-  background-color: #f2f2f2;
-  border-radius: 50%;
-}
-
-#sign-in {
-  margin: 0 10px;
-  margin-left: 12px;
-  background-color: #1a73e8;
-  color: white;
-  padding: 9px 18px;
-  font-size: 0.9em;
-  border-radius: 5px;
-}
-
-#sign-in:hover {
-  background-color: #2B7DE9;
-  box-shadow: 0 0 5px 0.5px #D5E4FC;
 }
 
 .nav-desktop, .service-desktop {

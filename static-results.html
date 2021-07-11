@@ -10,53 +10,82 @@
     <meta name="keywords" content="google, search, homepage, dummy, learn, html,
       css, the odin project">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round|Material+Icons+Outlined"
     rel="stylesheet">
+
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/results.css">
     <link rel="icon" href="images/google-icon-bg.png">
+    
+    <script src="scripts/main.js" defer></script>
     <script src="scripts/results-main.js" defer></script>
   </head>
   <body>
     <header>
-      <div class="header-top">
-        <span class="material-icons nav-mobile">
-          menu
-        </span>
-        <a href="index.html">
-          <img src="images/google-logo.png"
-          alt="google-logo" id="google-logo">
-        </a>
-        <a href="https://accounts.google.com">
-          <span class="material-icons-outlined account-icon">
-            account_circle
+      <div class="header-main">
+        <div class="header-top">
+          <span class="material-icons nav-mobile mobile">
+            menu
           </span>
-        </a>
+          <a href="index.html">
+            <img src="images/google-logo.png"
+            alt="google-logo" id="google-logo">
+          </a>
+          <a href="https://accounts.google.com">
+            <span class="material-icons-outlined account-icon mobile">
+              account_circle
+            </span>
+          </a>
+        </div>
+        <form action="https://google.com/search">
+          <label for="search" id="search-box">
+            <span class="material-icons-outlined mobile">
+              search
+            </span>
+            <input type="text" id="search" name="q" value="build this webpage">
+            <span class="material-icons-outlined clear-search">
+              close
+            </span>
+            <span class="material-icons-outlined desktop blue-glass">
+              search
+            </span>
+          </label>
+        </form>
+        <div class="desktop header-side">
+          <span class="material-icons-outlined app-icon">
+            settings
+          </span>
+          <span class="material-icons-round app-icon">
+            apps
+          </span>
+          <a href="https://accounts.google.com" id="sign-in">Sign in</a>
+        </div>
       </div>
-      <form action="https://google.com/search">
-        <label for="search" id="search-box">
-          <span class="material-icons-outlined">
-            search
-          </span>
-          <input type="text" id="search" name="q" value="build this webpage">
-          <span class="material-icons-outlined clear-search">
-            close
-          </span>
-        </label>
-      </form>
-      <nav class="main-nav">
-        <span class="current-page">All</span>
-        <a href="#">News</a>
-        <a href="#">Videos</a>
-        <a href="#">Maps</a>
-        <a href="#">Images</a>
-        <a href="#">Shopping</a>
-        <a href="#">Books</a>
-        <a href="#">Flights</a>
-        <a href="#" class="special-nav">Search&nbsp;tools</a>
-      </nav>
     </header>
+    <nav class="main-nav">
+      <div class="current-page">
+        <span class="material-icons-outlined desktop desktop-nav-icon">
+          search</span>
+        <span>All</span>
+      </div>
+      <div><a href="#">News</a></div>
+      <div><a href="#">Videos</a></div>
+      <div><a href="#">Maps</a></div>
+      <div class="more"><a href="#">Images</a></div>
+      <div><a href="#">Shopping</a></div>
+      <div class="more"><a href="#">Books</a></div>
+      <div class="more"><a href="#">Flights</a></div>
+      <div class="desktop more"><a href="#">Finance</a></div>
+      <div class="more-wrapper"><div id="more-toggle">More</div>
+        <ul class="more-navs"></ul>
+      </div>
+      <div class="special-nav"><a href="#" class="">
+        <span class="mobile">Search&nbsp;tools</span><span class="desktop">Tools</span>
+      </a></div>
+    </nav>
     <main>
+      <p class="desktop">About 150,000,000 results (0.56 seconds)</p>
       <div class="mobile-result">
         <article class="result">
           <a href="https://victor-lf.github.io/google-search-results/">https://victor-lf.github.io <span class="sub-page">› google-search-results</span>

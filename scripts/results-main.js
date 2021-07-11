@@ -51,3 +51,18 @@ const clearButton = document.querySelector(".clear-search");
 clearButton.addEventListener("click", function(e) {
   e.target.parentNode.querySelector("input").value = "";
 })
+
+// TODO change header class on sticky
+// https://developers.google.com/web/updates/2017/09/sticky-headers
+
+const moreNavs = document.querySelectorAll(".more")
+const moreList = document.querySelector(".more-navs")
+
+moreNavs.forEach(function(nav) {
+  moreList.appendChild(nav)
+})
+
+const moreToggle = document.getElementById("more-toggle")
+moreToggle.addEventListener("click", function() {
+  moreList.classList.toggle("shown")
+})
