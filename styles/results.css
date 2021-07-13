@@ -336,7 +336,7 @@ footer nav {
   padding-bottom: 1rem;
 }
 
-.main-nav .material-icons-round {
+.main-nav .material-icons-round, .main-nav .material-icons-outlined {
   display: none;
 }
 
