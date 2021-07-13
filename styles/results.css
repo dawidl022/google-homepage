@@ -174,6 +174,7 @@ main p {
 .related article img {
   border-radius: 10px 10px 0 0;
   width: 96px;
+  height: 96px;
 }
 
 .related__title, .related__subtitle {
@@ -554,7 +555,7 @@ footer nav {
     grid-template-columns: 1fr 1fr;
   }
 
-  .related-link:nth-last-child(2) {
+  .related-link.last-link {
     border-bottom: none;
     padding-bottom: 0;
   }
@@ -591,5 +592,136 @@ footer nav {
 
   #result-stats {
     color: #70757a;
+  }
+
+  .related-searches {
+    max-width: 650px;
+  }
+
+  .related-bubble.related-bubble-desktop {
+    color: #271baf;
+    width: 270px;
+    display: grid;
+    grid-template-columns: 30px 1fr 30px;
+    justify-items: center;
+    padding: .33rem .6rem;
+    margin: 1rem 0;
+  }
+
+  .related-bubble-desktop h3 {
+    color: inherit
+  }
+
+  .related-bubble-desktop:hover {
+    background-color: #fafafa;
+  }
+
+  .related-searches.bottom {
+    gap: .6em 1em;
+    margin-bottom: 2rem;
+  }
+
+  .related-searches.bottom > * {
+    padding: 0 1.8rem;
+    border: none;
+    box-sizing: border-box;
+    background-color: #f1f3f4;
+    border-radius: 100px;
+    height: 48px;
+  }
+
+  .related-searches.bottom h3 {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  body > footer {
+    border-top: 1px solid #dadce0;
+    padding-left: 184px;
+  }
+
+  footer nav.desktop {
+    display: flex;
+    padding: .8rem 0 1.4rem 0;
+    gap: 2rem;
+  }
+
+  .related article {
+    border: none;
+    color: #282828;
+    width: 100px;
+    margin-top: 1rem;
+    }
+
+  .related article:hover {
+    text-decoration: underline;
+  }
+
+  .related article img {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: #f7f7f7;
+    }
+    
+  .related {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .gooogle a {
+    color: #4788f4;
+  }
+
+  .gooogle a:hover {
+    text-decoration: underline;
+  }
+
+  .gooogle > * {
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    margin: -2px;
+    font-size: .9rem;
+  }
+
+  .gooogle img {
+    height: 38px;
+  }
+
+  main .gooogle-wrapper {
+    display: flex;
+    max-width: 650px;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .next-page {
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .next-page > div {
+    margin-left: .7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 72px;
+  }
+
+  .next-icon {
+    height: 38px;
+    display: flex;
+    align-items: center;
+  }
+
+  a.next-page:hover  {
+    text-decoration: none;
+  }
+
+  .next-page:hover .next-text {
+    text-decoration: underline;
   }
 }

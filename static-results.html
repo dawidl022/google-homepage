@@ -91,11 +91,11 @@
       <a href="#" class="more"><span class="material-icons-outlined">
         book
         </span>
-        Books</a></div>
+        Books</a>
       <a href="#" class="more"><span class="material-icons-outlined flight-icon">
         flight
         </span>
-        Flights</a></div>
+        Flights</a>
       <a href="#" class="desktop more"><span class="material-icons-outlined">
         trending_up
         </span>
@@ -104,12 +104,14 @@
         <div id="more-toggle"><span class="material-icons-outlined">
           more_vert
           </span>
-          More</div>
+          More
+        </div>
         <ul class="more-navs"></ul>
       </div>
       <div class="special-nav"><a href="#" class="">
         <span class="mobile">Search&nbsp;tools</span><span class="desktop">Tools</span>
-      </a></div>
+      </a>
+      </div>
     </nav>
     <main>
       <p class="desktop" id="result-stats">About 150,000,000 results (0.56 seconds)</p>
@@ -202,7 +204,7 @@
         </p>
       </article>
       <article class="result mobile-result after-related">
-        <a href="https://makeawebsitehub.com/">https://makeawebsitehub.com</span>
+        <a href="https://makeawebsitehub.com/">https://makeawebsitehub.com
         </a>
         <h1>
           <a href="https://makeawebsitehub.com/">
@@ -216,7 +218,7 @@
         </p>
       </article>
       <article class="result mobile-result after-related">
-        <a href="https://websitesetup.org/">https://websitesetup.org</span>
+        <a href="https://websitesetup.org/">https://websitesetup.org
         </a>
         <h1>
           <a href="https://websitesetup.org/">
@@ -276,7 +278,7 @@
               <article>
                 <!-- trying out BEM convention -->
                 <a href="#">
-                  <img class="related__img" src="images/wordpress.png"
+                  <img class="related__img" src="images/wordpress.svg"
                     alt="Wordpress logo">
                   <h4 class="related__title">WordPress</h4>
                   <p class="related__subtitle mobile">GNU General Public License</p>
@@ -291,7 +293,7 @@
               </article>
               <article>
                 <a href="#">
-                  <img class="related__img" src="images/g-web-designer.png"
+                  <img class="related__img" src="images/g-web-designer.svg"
                     alt="Google Web Design logo">
                   <h4 class="related__title">Google Web Designer</h4>
                   <p class="related__subtitle mobile">Proprietary software</p>
@@ -307,7 +309,8 @@
               </article>
               <article>
                 <a href="#">
-                  <img class="related__img" src="images/vscode.png"
+                  <img class="related__img" src="images/vscode.svg"
+                    style="padding: 2px;box-sizing: border-box;"
                     alt = "Visual Studio Code logo">
                   <h4 class="related__title">Visual Studio Code</h4>
                   <p class="related__subtitle mobile">MIT License</p>
@@ -320,7 +323,7 @@
                   <h4 class="related__title">Adobe XD</h4>
                 </a>
               </article>
-              <div class="more-related">
+              <div class="more-related mobile">
                 <a href="https://google.com/search?q=website+making+software">
                   <div>
                     <span class="material-icons-outlined more-arrow">
@@ -333,11 +336,15 @@
             </div>
             <div class="related-bar">
               <a href="https://google.com/search?q=website+making+software"
-                class="related-bubble">
-                <span class="material-icons-outlined icon">
+                class="related-bubble related-bubble-desktop">
+                <span class="material-icons-outlined icon mobile">
                   search
                 </span>
-                <h3>Website making software</h3>
+                <span class="material-icons-outlined desktop">
+                  arrow_forward
+                  </span>
+                <h3 class="mobile">Website making software</h3>
+                <h3 class="desktop">See more</h3>
               </a>
             </div>
           </div>
@@ -357,7 +364,7 @@
           <h3>Best website builder</h3>
         </a>
         <a href="https://google.com/search?q=free+website+builder"
-          class="related-link">
+          class="related-link last-link">
           <span class="material-icons-outlined icon">
             search
           </span>
@@ -435,9 +442,65 @@
           <h3>Steps to build a website from scratch</h3>
         </a>
       </section>
+      <div class="gooogle-wrapper bottom">
+        <div class="gooogle">
+          <div>
+            <img src="images/google-g.png" alt="'g' of google logo">
+          </div>
+          <div class="page-1">
+            <img src="images/google-red-o.png" alt="red 'o' of google logo">
+            1
+          </div>
+          <a href="#" class="page-2">
+            <img src="images/google-o.png" alt="'o' of google logo">
+            2
+          </a>
+          <a href="#" class="page-3">
+            <img src="images/google-o.png" alt="'o' of google logo">
+            3
+          </a>
+          <a href="#" class="page-4">
+            <img src="images/google-o.png" alt="'o' of google logo">
+            4
+          </a>
+          <a href="#" class="page-5">
+            <img src="images/google-o.png" alt="'o' of google logo">
+            5
+          </a>
+          <a href="#" class="page-6">
+            <img src="images/google-o.png" alt="'o' of google logo">
+            6
+          </a>
+          <a href="#" class="page-7">
+            <img src="images/google-o.png" alt="'o' of google logo">
+            7
+          </a>
+          <a href="#" class="page-8">
+            <img src="images/google-o.png" alt="'o' of google logo">
+            8
+          </a>
+          <a href="#" class="page-9">
+            <img src="images/google-o.png" alt="'o' of google logo">
+            9
+          </a>
+          <a href="#" class="page-10">
+            <img src="images/google-o.png" alt="'o' of google logo">
+            10
+          </a>
+          <a href="#" class="next-page">
+            <img src="images/google-gle.png" alt="'gle' of google logo">
+            <div>
+              <span class="material-icons-outlined next-icon">
+                chevron_right
+              </span>
+              <span class="next-text">Next</span>
+            </div>
+          </a>
+        </div>
+      </div>
     </main>
     <footer>
-      <div class="related-bar">
+      <div class="related-bar mobile">
         <a href="#" class="related-bubble">
           <span class="material-icons-outlined icon">
             expand_more
@@ -445,16 +508,22 @@
           More results
         </a>
       </div>
-      <nav>
+      <nav class="mobile">
         <div class="nav-row-mobile">
           <a href="https://google.com/preferences" class="desktop-last">Settings</a>
           <a href="https://support.google.com/">Help</a>
           <a href="https://www.google.com/tools/feedback/">Feedback</a>
         </div>
         <div class="nav-row-mobile">
-          <a href="https://google.com/privacy" >Privacy</a>
+          <a href="https://google.com/privacy">Privacy</a>
           <a href="https://policies.google.com">Terms</a>
         </div>
+      </nav>
+      <nav class="desktop">
+        <a href="https://support.google.com/">Help</a>
+        <a href="https://www.google.com/tools/feedback/">Send feedback</a>
+        <a href="https://google.com/privacy">Privacy</a>
+        <a href="https://policies.google.com">Terms</a>
       </nav>
     </footer>
   </body>
