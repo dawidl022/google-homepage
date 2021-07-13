@@ -75,3 +75,23 @@ document.addEventListener("click", function(e) {
     moreWrapper.classList.remove("on-top")
   }
 })
+
+function resizeMainNav() {
+  // make main-nav same size as search bar
+  // for responsiveness in edge cases of about 1024-1100px window width
+  const mainNav = document.querySelector(".main-nav");
+  const searchBar = document.getElementById("search-box");
+
+  if (window.innerWidth >= 1024) {
+    let navWidth = parseFloat(window.getComputedStyle(searchBar).width) + 
+      parseFloat(window.getComputedStyle(searchBar).paddingLeft) + 
+      parseFloat(window.getComputedStyle(searchBar).paddingRight) + "px";
+    mainNav.style.width = navWidth;
+  } else {
+    mainNav.style.width = null;
+  }
+
+}
+
+window.addEventListener('resize', resizeMainNav)
+resizeMainNav()

@@ -359,7 +359,7 @@ footer nav {
 
   .header-main {
     display: grid;
-    grid-template-columns: 135px 725px 1fr;
+    grid-template-columns: 135px minmax(650px, 725px) 1fr;
     align-items: center;
     padding: 0 .6rem;
     margin: 1rem 0;
@@ -393,6 +393,7 @@ footer nav {
 
   #sign-in {
     margin-right: 1.2rem;
+    width: 45px;
   }
 
   .header-side .app-icon {
@@ -416,7 +417,6 @@ footer nav {
   .main-nav {
     padding-left: 170px;
     overflow-x: visible;
-    border-bottom: 1px solid #ebebeb;
     font-size: .87rem;
   }
 
@@ -504,10 +504,13 @@ footer nav {
   
   .special-nav {
     border: none;
-    margin-left: 100px;
     padding-top: .1rem;
     padding-bottom: .1rem;
+    display: grid;
     align-self: center;
+    width: 100%;
+    align-content: center;
+    justify-items: end;
   }
 
   .special-nav a {
@@ -523,7 +526,8 @@ footer nav {
   }
 
   main {
-    margin-left: 184px;
+    border-top: 1px solid #ebebeb;
+    padding-left: 184px;
     background-color: #fff;
     gap: 1rem;
   }
