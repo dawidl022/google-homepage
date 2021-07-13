@@ -51,7 +51,7 @@ a {
 }
 
 .main-nav a {
-  color: unset;
+  color: #757575;
 }
 
 .current-page {
@@ -335,6 +335,10 @@ footer nav {
   padding-bottom: 1rem;
 }
 
+.main-nav .material-icons-round {
+  display: none;
+}
+
 @media (max-width: 1023px) {
   .mobile-result {
     border-top: 1px solid rgba(0, 0, 0, 0.08);
@@ -358,6 +362,7 @@ footer nav {
     align-items: center;
     padding: 0 .6rem;
     margin: 1rem 0;
+    margin-bottom: .5rem;
   }
 
   .header-stuck {
@@ -411,17 +416,20 @@ footer nav {
     padding-left: 170px;
     overflow-x: visible;
     border-bottom: 1px solid #ebebeb;
+    font-size: .87rem;
   }
 
   .main-nav > * {
     display: flex;
     align-items: center;
     gap: .4em;
-    font-size: .87rem;
-    margin: 0 .9rem;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0 0 .8em 0;
+    margin: 0 .1rem;
+    padding: .8em;
+    color: #5f6368;
+    height: 17px;
+  }
+
+  .main-nav a {
     color: #5f6368;
   }
 
@@ -432,6 +440,8 @@ footer nav {
   .current-page {
     color: #3584ea;
     border-bottom: 3px solid #1a73e8;
+    padding: .8em 0 .7em 0;
+    margin: 0 .9rem;
   }
 
   .desktop-query-word {
@@ -449,7 +459,7 @@ footer nav {
 
   .more-wrapper {
     flex-direction: column;
-    padding: 2px;
+    justify-content: center;
     align-items: flex-start;
   }
 
@@ -459,12 +469,13 @@ footer nav {
 
   #more-toggle {
     cursor: pointer;
+    display: flex;
   }
 
   .more-navs {
     position: absolute;
-    top: 20px;
-    left: -20px;
+    top: 30px;
+    left: -5px;
     background-color: #fff;
     display: none;
     /* height: 0; */
@@ -481,8 +492,9 @@ footer nav {
   }
 
   .more-navs .more {
-    padding: .6em 1.5em;
-    display: block;
+    padding: .6em 1.2em;
+    display: flex;
+    gap: .4em;
   }
 
   .more:hover {
@@ -491,7 +503,22 @@ footer nav {
   
   .special-nav {
     border: none;
-    padding-left: 200px;
+    margin-left: 100px;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+    align-self: center;
+  }
+
+  .special-nav a {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: .4rem .8rem;
+  }
+
+  .special-nav a:hover {
+    background-color: #f8f9fa;
+    border-color: #dadce0;
+
   }
 
   main {
@@ -546,5 +573,23 @@ footer nav {
     width: 100%;
     background-color: #dadce0;
     margin-right: 10px;
+  }
+
+  .shopping-icon {
+    transform: rotate(90deg);
+  }
+
+  .flight-icon {
+    transform: rotate(45deg);
+  }
+
+  .main-nav .material-icons-round, .main-nav .material-icons-outlined {
+    display: unset;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  #result-stats {
+    color: #70757a;
   }
 }
