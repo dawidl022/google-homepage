@@ -411,6 +411,7 @@ footer nav {
 
   header {
     position: sticky;
+    z-index: 1;
     background-color: white;
     top: 0;
   }
@@ -486,7 +487,7 @@ footer nav {
     padding: .3em 0;
     margin: .6em;
     border-radius: 10px;
-    z-index: 0;
+    z-index: 2;
   }
 
   .more-navs.shown {
@@ -623,7 +624,6 @@ footer nav {
 
   .related-searches.bottom {
     gap: .6em 1em;
-    margin-bottom: 2rem;
   }
 
   .related-searches.bottom > * {
