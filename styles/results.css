@@ -139,6 +139,7 @@ main p {
   transition: all .2s;
   box-sizing: border-box;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .related {
