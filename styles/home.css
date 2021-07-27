@@ -221,7 +221,14 @@ footer nav .nav-row-mobile {
 @media (min-width: 1024px) and (min-height: 650px) {
   main {
     display: grid;
-    margin-bottom: 310px;
+    margin-bottom: calc(310px - 4vh + 26px);
     align-content: end;
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 850px) {
+  main {
+    margin-top: 205px;
+    align-content: start;
   }
 }
